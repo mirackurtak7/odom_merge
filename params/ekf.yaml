@@ -1,0 +1,26 @@
+frequency: 50  # EKF güncelleme frekansı
+sensor_timeout: 0.1
+two_d_mode: true  # 2D robot için
+transform_time_offset: 0.0
+transform_timeout: 0.0
+publish_tf: true
+publish_acceleration: false
+
+map_frame: map          # Harita çerçevesi
+odom_frame: odom        # Odom çerçevesi
+base_link_frame: base_link  # Robotun ana çerçevesi
+world_frame: odom       # Odometriyi referans alınacak çerçeve
+
+odom0: odom_encoder     # Encoder odometrisi
+odom0_config: [true, true, false, false, false, true,  # Pozisyon (x, y) ve yaw
+               false, false, false, false, false, false, false, false, false]
+odom0_queue_size: 5
+odom0_differential: false
+odom0_relative: false
+
+odom1: odom_lidar       # RF2O tarafından oluşturulan lidar odometrisi
+odom1_config: [true, true, false, false, false, true,  # Pozisyon (x, y) ve yaw
+               false, false, false, false, false, false, false, false, false]
+odom1_queue_size: 5
+odom1_differential: false
+odom1_relative: false
