@@ -1,0 +1,1 @@
+Robot işletim sistemlerindeki en önemli teori olan odom'u oluşturmak için 2D lidar ve kodlayıcı odom'ları oluşturan ve birleştiren bir paket hazırladım. Bu sayede SLAM algoritması için olmazsa olmaz olan pozisyon tahmini daha iyi ve daha tutarlı verilerle sağlanacaktır.
