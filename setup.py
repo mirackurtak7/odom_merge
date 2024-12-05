@@ -11,7 +11,7 @@ setup(
          ['resource/' + package_name]),
         ('share/' + package_name, ['package.xml']),
         ('share/' + package_name + '/launch', ['launch/odom_merge_launch.py']),
-        ('share/' + package_name + '/config', ['config/ekf.yaml']),  # Config dosyasını ekliyoruz
+        ('share/' + package_name + '/params', ['params/ekf.yaml']),  # params dosyasını ekliyoruz
     ],
     install_requires=['setuptools'],
     zip_safe=True,
